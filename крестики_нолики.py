@@ -63,14 +63,14 @@ def check():
 print_list()
 
 for j in range(1,5):
-    a, b = map(int, input("Введи номер строки и столбца куда поставить X").split())
+    a, b = map(int, input("Введи номер строки и столбца куда поставить X через пробел").split())
     a=a+1
     b=b+1
     myList[a][b]="X"
     print_list()
     if check() is False:
         break
-    c, d = map(int, input("Введи номер строки и столбца куда поставить 0").split())
+    c, d = map(int, input("Введи номер строки и столбца куда поставить 0 через пробел").split())
     c=c+1
     d=d+1
     myList[c][d] = "0"
